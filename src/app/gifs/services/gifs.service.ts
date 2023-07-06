@@ -63,6 +63,7 @@ export class GifsService {
 
     this._tagsHistory = JSON.parse(localStorage.getItem('history')!);
 
+    // si no ha cargado historial
     if (this._tagsHistory.length === 0) return;
     this.searchTag(this._tagsHistory[0]);
   }
